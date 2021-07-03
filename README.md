@@ -70,7 +70,13 @@ $ git clone -b v2.1 https://github.com/donaldzou/Wireguard-Dashboard.git
 $ cd Wireguard-Dashboard/src
 $ python3 -m pip install -r requirements.txt
 ```
-
+**2. Remove from blocklist**
+cd /etc/unbount/unbount.conf.d
+nano host.conf
+STRG W search "cdn.jsdelivr.net" remove from list
+STR O 
+STRG X
+systemctl reboot
 **3. Install & run Wireguard Dashboard**
 
 ```shell
